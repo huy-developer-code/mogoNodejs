@@ -70,6 +70,6 @@ app.get('/',(req , res ,  next) => {
     res.json('Home')
 })
 
-app.listen(3000, () =>{
+app.listen(process.env.PORT, () =>{
     console.log('server started on port 3000')
 })
